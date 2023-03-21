@@ -17,7 +17,7 @@ public class MessageWriter implements IConsumeMessage, IUseFileLogger {
     @Override
     public void accept(IMessage iMessage) {
         var message = iMessage.unwrap();
-        var bytes=message.getBytes();
+        var bytes=message.getBytes(StandardCharsets.UTF_8);
         out.write(getBytes(bytes.length));
         out.write(bytes);
         out.flush();
