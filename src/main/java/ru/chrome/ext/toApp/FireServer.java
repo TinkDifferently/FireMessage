@@ -2,6 +2,7 @@ package ru.chrome.ext.toApp;
 
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
+import ru.chrome.ext.api.Session;
 import ru.chrome.ext.toApp.io.MessageWriter;
 import ru.chrome.ext.toApp.observes.ObservableCreator;
 import ru.chrome.ext.toApp.types.Messages;
@@ -20,7 +21,7 @@ public class FireServer implements Runnable {
     private final AtomicBoolean interruptMe = new AtomicBoolean();
     private AtomicReference<Process> process = new AtomicReference<>();
 
-    private final Messages messages=new Messages();
+    private final Messages messages = new Messages();
 
     private Process getProcess() {
         if (process.get() == null) {
@@ -38,18 +39,18 @@ public class FireServer implements Runnable {
         this.process.set(process);
     }
 
-    public void mountObserver(String initialMessage, Path sourcePath) {
+    public void mountObserver(String initialMessage, Path sourcePath, Session session) {
         interruptMe.set(false);
         var inputStream = getProcess().getInputStream();
         var outputStream = getProcess().getOutputStream();
         var stream = new PrintStream(outputStream);
-        var writer = new MessageWriter(stream);
-        var messages=MessageParser.getInstance().parseMessages(sourcePath);
+        var writer = new MessageWriter(stream, session);
+        var messages = MessageParser.getInstance().parseMessages(sourcePath);
         this.messages.putAll(messages);
-        AtomicBoolean call=new AtomicBoolean(true);
+        AtomicBoolean call = new AtomicBoolean(true);
         var connector = new ObservableCreator()
                 .create(inputStream, interruptMe)
-                .mount(writer,this.messages,call);
+                .mount(writer, this.messages, call);
         connector.connect();
         writer.accept(() -> initialMessage);
         while (!interruptMe.get()) {
@@ -60,22 +61,5 @@ public class FireServer implements Runnable {
             }
         }
         call.set(false);
-    }
-
-    public void refreshObserver(String initialMessage, Path sourcePath){
-        interruptMe.set(false);
-        var messages=MessageParser.getInstance().parseMessages(sourcePath);
-        this.messages.putAll(messages);
-        var outputStream = getProcess().getOutputStream();
-        var stream = new PrintStream(outputStream);
-        var writer = new MessageWriter(stream);
-        writer.accept(() -> initialMessage);
-        while (!interruptMe.get()) {
-            try {
-                TimeUnit.MILLISECONDS.sleep(100);
-            } catch (InterruptedException e) {
-                break;
-            }
-        }
     }
 }
