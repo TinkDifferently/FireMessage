@@ -1,0 +1,80 @@
+Extension promised a message of length: 138
+{"cmdId":20,"type":"cmd","c":1,"n":1,"colonyId":0,"msg":"[\"GetP\",1,0,\"SetPluginProperties\"]","ext":"polkfpcimpfhcflopocaobbbnphilcbi"}
+App promised a message of length: 108
+{"c":1,"cmdId":20,"colonyId":0,"msg":"[\"success\",{\"$type\":\"ref\",\"data\":[0,5]}]","n":1,"type":"resp"}
+Extension promised a message of length: 114
+{"cmdId":21,"type":"cmd","c":1,"n":1,"colonyId":0,"msg":"[\"Enum\",0,5]","ext":"polkfpcimpfhcflopocaobbbnphilcbi"}
+App promised a message of length: 76
+{"c":1,"cmdId":21,"colonyId":0,"msg":"[\"success\",[]]","n":1,"type":"resp"}
+Extension promised a message of length: 158
+{"cmdId":22,"type":"cmd","c":1,"n":1,"colonyId":0,"msg":"[\"Invoke\",0,5,\"\",[{\"$type\":\"ref\",\"data\":[0,3]}]]","ext":"polkfpcimpfhcflopocaobbbnphilcbi"}
+App promised a message of length: 73
+{"c":1,"cmdId":11,"colonyId":0,"msg":"[\"Enum\",0,3]","n":1,"type":"cmd"}
+App promised a message of length: 133
+{"c":1,"cmdId":12,"colonyId":0,"msg":"[\"Invoke\",1,0,\"readObject\",[{\"$type\":\"local-ref\",\"data\":[0,3]}]]","n":1,"type":"cmd"}
+Extension promised a message of length: 159
+{"cmdId":11,"type":"resp","c":1,"n":1,"colonyId":0,"msg":"[\"success\",[\"Session\",\"Command\",\"RememberPacket\"]]","ext":"polkfpcimpfhcflopocaobbbnphilcbi"}
+Extension promised a message of length: 203
+{"cmdId":12,"type":"resp","c":1,"n":1,"colonyId":0,"msg":"[\"success\",{\"Session\":\"00000000000000000000001148725277\",\"Command\":1,\"RememberPacket\":true}]","ext":"polkfpcimpfhcflopocaobbbnphilcbi"}
+App promised a message of length: 78
+{"c":1,"cmdId":22,"colonyId":0,"msg":"[\"success\",true]","n":1,"type":"resp"}
+Extension promised a message of length: 131
+{"cmdId":23,"type":"cmd","c":1,"n":1,"colonyId":0,"msg":"[\"GetP\",1,0,\"CreatePacket\"]","ext":"polkfpcimpfhcflopocaobbbnphilcbi"}
+App promised a message of length: 108
+{"c":1,"cmdId":23,"colonyId":0,"msg":"[\"success\",{\"$type\":\"ref\",\"data\":[0,6]}]","n":1,"type":"resp"}
+Extension promised a message of length: 114
+{"cmdId":24,"type":"cmd","c":1,"n":1,"colonyId":0,"msg":"[\"Enum\",0,6]","ext":"polkfpcimpfhcflopocaobbbnphilcbi"}
+App promised a message of length: 76
+{"c":1,"cmdId":24,"colonyId":0,"msg":"[\"success\",[]]","n":1,"type":"resp"}
+Extension promised a message of length: 384
+{"cmdId":25,"type":"cmd","c":1,"n":1,"colonyId":0,"msg":"[\"Invoke\",0,6,\"\",[\"-----\\r\\nТИП КОМАНДЫ: 001003\\r\\nВЕРСИЯ: 04\\r\\nКЛИЕНТ: 8736S75307\\r\\nЗАПРОС НА ПОЛУЧЕНИЕ ВЫПИСКИ\\r\\nОТ: 29/03/2023 ДО: 29/03/2023\\r\\nСЧЕТ: 40702810500000114727\",\"Подпись данных\"]]","ext":"polkfpcimpfhcflopocaobbbnphilcbi"}
+App promised a message of length: 847
+{"c":1,"cmdId":25,"colonyId":0,"msg":"[\"success\",\"0000057901H1000003460000034600000097\\r\\n8736S75307SYA       00738089\\r\\n                    00000000\\r\\nBEGIN\\r\\nСЕССИЯ: 00000000000000000000001148725277\\r\\nНОМЕР ПАКЕТА: 000003\\r\\nЧИСЛО КОМАНД: 000001\\r\\nПОЛЬЗОВАТЕЛЬ: 8736S75307SYA       \\r\\nПРИМ: ID#I192.168.0.139#M38:00:25:2C:A0:24#F#S4277-6AE8#T4277-6AE8#V1.0.0.32\\r\\n-----\\r\\nТИП КОМАНДЫ: 001003\\r\\nВЕРСИЯ: 04\\r\\nКЛИЕНТ: 8736S75307\\r\\nЗАПРОС НА ПОЛУЧЕНИЕ ВЫПИСКИ\\r\\nОТ: 29/03/2023 ДО: 29/03/2023\\r\\nСЧЕТ: 40702810500000114727\\r\\nEND\\r\\nBEGIN SIGNATURE\\r\\n0jB6xu5NRtbA5TYM+FdWlj7UbkCMRZRzJqggksE4Lrd0OjNj+7HlgY5iOoSfPybg\\r\\n8IZnUMwPVKZP5RWe7iGxeQ==\\r\\n=p+FS\\r\\nEND SIGNATURE\"]","n":1,"type":"resp"}
+Extension promised a message of length: 138
+{"cmdId":26,"type":"cmd","c":1,"n":1,"colonyId":0,"msg":"[\"GetP\",1,0,\"SetPluginProperties\"]","ext":"polkfpcimpfhcflopocaobbbnphilcbi"}
+App promised a message of length: 108
+{"c":1,"cmdId":26,"colonyId":0,"msg":"[\"success\",{\"$type\":\"ref\",\"data\":[0,7]}]","n":1,"type":"resp"}
+Extension promised a message of length: 114
+{"cmdId":27,"type":"cmd","c":1,"n":1,"colonyId":0,"msg":"[\"Enum\",0,7]","ext":"polkfpcimpfhcflopocaobbbnphilcbi"}
+App promised a message of length: 76
+{"c":1,"cmdId":27,"colonyId":0,"msg":"[\"success\",[]]","n":1,"type":"resp"}
+Extension promised a message of length: 158
+{"cmdId":28,"type":"cmd","c":1,"n":1,"colonyId":0,"msg":"[\"Invoke\",0,7,\"\",[{\"$type\":\"ref\",\"data\":[0,4]}]]","ext":"polkfpcimpfhcflopocaobbbnphilcbi"}
+App promised a message of length: 73
+{"c":1,"cmdId":13,"colonyId":0,"msg":"[\"Enum\",0,4]","n":1,"type":"cmd"}
+App promised a message of length: 133
+{"c":1,"cmdId":14,"colonyId":0,"msg":"[\"Invoke\",1,0,\"readObject\",[{\"$type\":\"local-ref\",\"data\":[0,4]}]]","n":1,"type":"cmd"}
+Extension promised a message of length: 159
+{"cmdId":13,"type":"resp","c":1,"n":1,"colonyId":0,"msg":"[\"success\",[\"Session\",\"Command\",\"RememberPacket\"]]","ext":"polkfpcimpfhcflopocaobbbnphilcbi"}
+Extension promised a message of length: 203
+{"cmdId":14,"type":"resp","c":1,"n":1,"colonyId":0,"msg":"[\"success\",{\"Session\":\"00000000000000000000001148725277\",\"Command\":1,\"RememberPacket\":true}]","ext":"polkfpcimpfhcflopocaobbbnphilcbi"}
+App promised a message of length: 78
+{"c":1,"cmdId":28,"colonyId":0,"msg":"[\"success\",true]","n":1,"type":"resp"}
+Extension promised a message of length: 131
+{"cmdId":29,"type":"cmd","c":1,"n":1,"colonyId":0,"msg":"[\"GetP\",1,0,\"CreatePacket\"]","ext":"polkfpcimpfhcflopocaobbbnphilcbi"}
+App promised a message of length: 108
+{"c":1,"cmdId":29,"colonyId":0,"msg":"[\"success\",{\"$type\":\"ref\",\"data\":[0,8]}]","n":1,"type":"resp"}
+Extension promised a message of length: 114
+{"cmdId":30,"type":"cmd","c":1,"n":1,"colonyId":0,"msg":"[\"Enum\",0,8]","ext":"polkfpcimpfhcflopocaobbbnphilcbi"}
+App promised a message of length: 76
+{"c":1,"cmdId":30,"colonyId":0,"msg":"[\"success\",[]]","n":1,"type":"resp"}
+Extension promised a message of length: 483
+{"cmdId":31,"type":"cmd","c":1,"n":1,"colonyId":0,"msg":"[\"Invoke\",0,8,\"\",[\"#digestVersion:5\\r\\n#modelVersion:1\\r\\nstatementRequest.account13d:8736S75307002\\r\\nstatementRequest.account20d:40702810500000114727\\r\\nstatementRequest.clientId:524376874\\r\\nstatementRequest.dateFrom:2023-03-29T00:00:00+03:00\\r\\nstatementRequest.dateTo:2023-03-29T00:00:00+03:00\\r\\nstatementRequest.id:106720\",\"Подпись данных\"]]","ext":"polkfpcimpfhcflopocaobbbnphilcbi"}
+App promised a message of length: 946
+{"c":1,"cmdId":31,"colonyId":0,"msg":"[\"success\",\"0000072801H1000004950000049500000097\\r\\n8736S75307SYA       00738089\\r\\n                    00000000\\r\\nBEGIN\\r\\nСЕССИЯ: 00000000000000000000001148725277\\r\\nНОМЕР ПАКЕТА: 000004\\r\\nЧИСЛО КОМАНД: 000001\\r\\nПОЛЬЗОВАТЕЛЬ: 8736S75307SYA       \\r\\nПРИМ: ID#I192.168.0.139#M38:00:25:2C:A0:24#F#S4277-6AE8#T4277-6AE8#V1.0.0.32\\r\\n#digestVersion:5\\r\\n#modelVersion:1\\r\\nstatementRequest.account13d:8736S75307002\\r\\nstatementRequest.account20d:40702810500000114727\\r\\nstatementRequest.clientId:524376874\\r\\nstatementRequest.dateFrom:2023-03-29T00:00:00+03:00\\r\\nstatementRequest.dateTo:2023-03-29T00:00:00+03:00\\r\\nstatementRequest.id:106720\\r\\nEND\\r\\nBEGIN SIGNATURE\\r\\n7chbdEyeRYhrjLt5ICtUZNJU+g/8rxJ70YFoFWp/p5jX+2ZNC10+V1CZe7VO7eQF\\r\\n1UHZoeWtQZBrF0NPBwmeOw==\\r\\n=g72n\\r\\nEND SIGNATURE\"]","n":1,"type":"resp"}
+Extension promised a message of length: 116
+{"cmdId":32,"type":"cmd","c":1,"n":1,"colonyId":0,"msg":"[\"RelObj\",0,5]","ext":"polkfpcimpfhcflopocaobbbnphilcbi"}
+App promised a message of length: 78
+{"c":1,"cmdId":32,"colonyId":0,"msg":"[\"success\",null]","n":1,"type":"resp"}
+Extension promised a message of length: 116
+{"cmdId":33,"type":"cmd","c":1,"n":1,"colonyId":0,"msg":"[\"RelObj\",0,6]","ext":"polkfpcimpfhcflopocaobbbnphilcbi"}
+App promised a message of length: 78
+{"c":1,"cmdId":33,"colonyId":0,"msg":"[\"success\",null]","n":1,"type":"resp"}
+Extension promised a message of length: 116
+{"cmdId":34,"type":"cmd","c":1,"n":1,"colonyId":0,"msg":"[\"RelObj\",0,7]","ext":"polkfpcimpfhcflopocaobbbnphilcbi"}
+App promised a message of length: 78
+{"c":1,"cmdId":34,"colonyId":0,"msg":"[\"success\",null]","n":1,"type":"resp"}
+Extension promised a message of length: 116
+{"cmdId":35,"type":"cmd","c":1,"n":1,"colonyId":0,"msg":"[\"RelObj\",0,8]","ext":"polkfpcimpfhcflopocaobbbnphilcbi"}
+App promised a message of length: 78
+{"c":1,"cmdId":35,"colonyId":0,"msg":"[\"success\",null]","n":1,"type":"resp"}
